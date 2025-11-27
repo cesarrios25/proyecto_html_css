@@ -6,7 +6,7 @@
 html {
     font-size: 62.5%;
 }
-body {
+.contenedor-principal {
     width: 100%;
     height: 100vh;                   
     background-image: url("../assets/fondo.JPG");
@@ -16,23 +16,21 @@ body {
     overflow: hidden;  
     opacity: 4;   
 }
-header {
-    width: 100%;
-    height: 100vh;
-}
-
-.titulo {
+.contenedor-principal .titulo-principal {
     font-size: 9.3rem;
-    margin-top: 17rem;
+    margin-top: 13rem;
     text-align: center;
     color: greenyellow;
     letter-spacing: 0.6rem;
+    box-shadow: 0 0.6rem 0.4rem rgba(172, 255, 47, 0.28);
+    margin-bottom: 3rem;
 }
-.nav {       
-  padding: 18px 40px;        
+.contenedor-principal .nav {       
+  padding: 18px 40px; 
+  margin-bottom: 4.5rem;       
 }
 
-.nav ul {
+.contenedor-principal .nav ul {
   list-style: none;
   display: flex; 
   justify-content: center;
@@ -40,21 +38,65 @@ header {
   gap: 30px; 
 }
 
-.nav a {
+.contenedor-principal .nav a {
   text-decoration: none;
-  color: #5396ed;
+  color: green;
   font-weight: 500;
   letter-spacing: 2px;       
   transition: 0.3s ease;
   font-size: 5rem;
 }
 
-.nav a:hover {
+.contenedor-principal .nav a:hover {
     color: greenyellow; 
     border: 0.5rem solid greenyellow; 
     padding: 0.7rem;
     border-radius: 0.7rem; 
     font-size: 5.3rem;  
-
+    transition: 1s;
 }
 
+.contenedor-contenido {
+    width: 100%;
+    height: auto;
+    display: flex;
+    box-shadow: 0 12px 26px rgb(153, 205, 50);
+}
+
+.contenido-izquierdo {
+    width: 70%;
+    margin-top: 7rem;
+}
+.contenido-izquierdo .titulo-izquierdo {
+    text-align: center;
+    color: green;
+    font-size: 9rem;
+    margin-top: 3rem;
+}
+.contenido-izquierdo p {
+    margin: 2rem 6rem;
+    text-align: justify;
+    font-size: 2.5rem;
+    color: green;
+}
+.contenido-derecho {
+    width: 30%;
+    display: flex;           
+    justify-content: center; 
+    align-items: center;     
+    margin: 0 auto; 
+    margin-top: 7rem;
+}
+.contenido-derecho img {
+    max-width: 100%;        
+    width: 250px;
+    margin-bottom: 11rem;
+    border: 1px solid rgba(0, 128, 0, 0.143);
+    box-shadow: 0 12px 20px yellowgreen;
+    border-radius: 7px;
+}
+.contenido-derecho img:hover {
+    width: 300px;
+    transition: 2s;
+    margin-bottom: 2rem;
+}
