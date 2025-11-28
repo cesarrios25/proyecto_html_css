@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;                
+    background-image: url("../assets/fondo.png");
+    background-size: cover;          
+    background-position: center;    
+    background-repeat: no-repeat;     
+    overflow-y: auto;
+    overflow-x: hidden;
+    opacity: 1;
+    padding-top: 1rem;
+}
+
+.nav {  
+    width: 100%;
+    position: fixed;     
+    padding: 18px 40px; 
+    margin-bottom: 4.5rem;      
+}
+
+.nav ul {
+    width: 100%;
+  list-style: none;
+  display: flex; 
+  justify-content: center;
+  align-items: center;            
+  gap: 23px;
+}
+
+.nav a {
+  text-decoration: none;
+  /* color: green; */
+  color: rgb(178, 173, 173);
+  font-weight: 100;
+  letter-spacing: 2px;       
+  transition: 0.3s ease;
+  font-size: 2rem;
+  border-bottom: 0.8px solid green;
+  box-shadow: 0 6px 36px rgba(153, 205, 50, 0.751);
+}
+
+.nav a:hover {
+    color: green; 
+    border: 0.5rem solid rgba(0, 128, 0, 0.58); 
+    padding: 0.3rem;
+    border-radius: 0.7rem; 
+    font-size: 2.3rem;  
+    transition: 1s ease;
+}
+
+/* ----------------------------------------------------------------------- */
+
+section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+section article {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+    /* gap: 40px; */
+}
+section article h1 {
+    font-size: 4rem;
+    color: green;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+section article p {
+    font-size: 1.8rem;
+    color: rgb(178, 173, 173);
+    text-align: justify;
+    margin-bottom: 0.9rem;
+}
+section article p:hover {
+    background-color: #000000cf;
+    padding: 0.4rem;
+    transition: 1.4s;
+}
+section article img {
+    width: 100%;
+    height: auto;
+    border-radius: 9px;
+    box-shadow: 0 12px 40px rgb(178, 173, 173);
+    object-fit: cover;
+}
