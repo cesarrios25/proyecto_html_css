@@ -229,6 +229,5 @@ article {
     position: relative;
     top: -880;
     margin-right: 170px;
+    filter: drop-shadow(0 1px 11px yellowgreen)
 }
-
-

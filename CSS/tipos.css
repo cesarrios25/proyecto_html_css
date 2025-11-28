@@ -74,6 +74,10 @@ section article {
     margin-bottom: 1rem;
     /* gap: 40px; */
 }
+section article img:hover {
+    box-shadow: 0 15px 31px yellowgreen;
+    transition: 1.2s ease;
+}
 section article h1 {
     font-size: 4rem;
     color: green;

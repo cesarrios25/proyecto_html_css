@@ -111,6 +111,7 @@ html {
     border-radius: 7px;
     background-color: #080908a0;
     transition: transform 2s ease;
+    /* filter: drop-shadow(0 1px 11px yellowgreen); */
 }
 .contenido-derecho img:hover {
     /* width: 410px;
