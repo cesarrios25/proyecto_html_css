@@ -110,8 +110,11 @@ html {
     box-shadow: 0 2px 56px yellowgreen;
     border-radius: 7px;
     background-color: #080908a0;
+    transition: transform 2s ease;
 }
 .contenido-derecho img:hover {
-    width: 410px;
-    transition: 2s;
+    /* width: 410px;
+    transition: 2s ease;*/
+    background-color: #000; 
+    transform: scale(1.3);
 }
